@@ -1,0 +1,12 @@
+<template>
+
+    <lightning-card title="IMDB Moives">
+        <lightning-input label="Enter Movie Name" onchange={handleChange}></lightning-input>
+        <lightning-button label="Search" onclick={handleClick}></lightning-button>
+    </lightning-card>
+
+    <lightning-card>
+        <font size="6">{showText}</font>
+        <br>{searchText}
+    </lightning-card>
+</template>
