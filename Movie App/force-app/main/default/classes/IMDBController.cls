@@ -20,7 +20,6 @@ public with sharing class IMDBController {
         // Send the HTTP request and get the response.
 		HttpResponse response = http.send(request);
 
-
 		// If the HTTP response code is successful, parse the JSON response and update the contact.
 		if (response.getStatusCode() == 200) {
 			// Deserialize the JSON string into collections of primitive data types.
@@ -34,7 +33,7 @@ public with sharing class IMDBController {
             return errorMessage;
 
         }
-            
+        
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
         }
